@@ -1,0 +1,46 @@
+<h1> HTML </h1>
+<p>Hypertext Markup Language (HTML) is the standard markup
+language for <strong> creating <u>web</u> pages</strong> and web
+applications.browsers receive HTML documents from a
+web server or from local storage and
+render them into multimedia web pages.
+HTML decribes the structure of a Web
+page semantically and origiinally
+included cues for the appearance of
+document.</p><p> HTML elements are the building blocks of
+HTML pages. With HTML constructs, images
+and other objects, such as interactive
+forms, may be embedded into the rendered
+page. It provides a means to create
+structured documents by denoting
+structural semantics for text such as
+headings, paragraphs, lists, links,
+quotes and other items, HTML elements
+are delineated by tags, written using
+angle brackets.</p>
+
+--------------------------------------------
+HTML
+
+1. TAG(태그) 모음 (닫힐 때는 /로 구분)
+
+1) <strong> creating web pages</strong> => 가운데 문장이 진해짐.
+2) <u>web</u> => 가운데 문장에 밑줄(underline, 'u')
+3) <h1> HTML </h1> => 숫자가 올라갈수록 글씨가 작아짐, 일반적인 텍스트보다 글씨가
+두꺼워짐, 줄바꿈이 됨, HTML heading(제목을 나타내는 태그)
+
+<h1>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h1>
+<h2>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h2>
+<h3>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h3>
+<h4>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h4>
+<h5>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h5>
+<h6>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h6>
+
+4) 150개가 넘는 태그를 다 외워야 될까? -> X 검색하면서, but 기본적인 태그는 알아야.
+https://www.advancedwebranking.com/seo/html-study/  - 전세계 웹사이트에서 쓰이는 태그 갯수에 대한 통계
+https://ofcourse.kr/html-course/head-%ED%83%9C%EA%B7%B8 - html, css, js 기본적 태그 정의, 소개 
+
+5) <br> =>줄바꿈(이건 태그를 닫지 않음)
+   <br><br><br> => 3번 줄바꿈 
+6) <p>문장</p> =>  단락을 구분해줌. (<br>보단 단락의 정보를 나타내는 <p></p>를 쓰는
+것이 더 좋다>
