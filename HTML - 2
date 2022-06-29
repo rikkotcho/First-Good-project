@@ -1,0 +1,86 @@
+<ul>
+  <li>1. HTML</li>
+  <li>2. CSS</li>
+  <li>3. JavaScript</li>
+</ul>
+<h1> HTML </h1>
+<p>Hypertext Markup Language (HTML) is the standard markup
+language for <strong> creating <u>web</u> pages</strong> and web
+applications.browsers receive HTML documents from a 
+web server or from local storage and
+render them into multimedia web pages.
+HTML decribes the structure of a Web
+page semantically and origiinally
+included cues for the appearance of
+document.
+<img src="coding.jpg" width="100%">
+</p><p style="margin-top:45px;"> HTML elements are the building blocks of
+HTML pages. With HTML constructs, images
+and other objects, such as interactive
+forms, may be embedded into the rendered
+page. It provides a means to create
+structured documents by denoting
+structural semantics for text such as
+headings, paragraphs, lists, links,
+quotes and other items, HTML elements
+are delineated by tags, written using
+angle brackets.</p>
+
+------------------------------------------------------------
+
+웹의 핵심적인 철학 - 접근성
+웹은 모든 운영체제에서 동작, 웹 페이지의 소스코드는 누구나 볼 수 있음,
+웹은 저작권이 없는 순수한 공공재, accessibility(개방성, 접근성)
+
+태그론 부족해! -속성편-
+
+7) 웹에 사진 넣는법(태그 <img>, 속성(Attribute))
+
+<img> 태그만 넣는다면 태그의 정보가 부족 -> 아무 이미지x
+따라서 어떤 이미지인지 알려주기로 약속된 속성, source => 줄여서 src
+<img src="coding.jpg" width="100%"> (<img src ="이미지 주소" width="이미지 크기">)
+
+*Unsplash(저작권의 구애x 퀄리티 높은 사진을 구할 수 있는 웹사이트)
+
+img는 태그, src="coding.jpg" width="100%" 속성이다.
+속성은 위치를 바꿔도 상관x <img width="100%" src ="coding.jpg"> 도 가능함.
+
+태그로는 나타내기 부족한 정보를 속성을 통해 더 많은 의미를 부가할 수 있게 됨.
+
+*Tip : ctrl + 마우스 왼쪽 클릭 => 여러 줄 한 번에 입력가능, 
+드래그 + TAB => 안으로 한꺼번에 들여쓰기
+
+
+                                    <parent>
+●부모-자식 관계의 태그        <child></child>
+                                    </parent>
+
+부모-자식 태그를 이용하여 "목차" 만들기
+
+
+8) 'list'의 준말 li,
+ <li> 항목 </li>  => 항목 태그
+
+<li>와 같은 항목들을 구분해주는 부모태그 <ul> (<li>목록</li>) </ul> <ul> (<li>목록</li>) </ul> 
+(이때 Tip에서 배운 드래고 + TAB을 이용해 안으로 들여쓰기)
+
+부모 태그(<ul>)를 이용해 <li>와 같은 항목들이 어디서부터 어디까지가 서로 연관된 
+항목인지를 경계 짓기 위한, 그룹핑을 하기 위한 부모태그가 필요함.
+
+=>  ***<li> 태그는 반드시 부모 태그를 갖고 있다, 부모 태그인 <ul>태그는
+반드시 자식 태그를 갖고 있다.
+
+9) <ol> 태그
+<ol>태그는 따로 숫자를 적지 않아도 알아서 순서를 정해서 숫자를 적어줌.
+
+<ul>                                                        
+  <li>1. HTML</li>
+  <li>2. CSS</li>
+  <li>3. JavaScript</li>
+</ul>
+         
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>                    
+  <li>JavaScript</li>
+</ol>
