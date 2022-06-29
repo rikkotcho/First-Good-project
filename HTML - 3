@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <title> WEB1 - html </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+  <h1> HTML이란 무엇인가? </h1>
+  <p>Hypertext Markup Language (HTML) is the standard markup
+  language for <strong> creating <u>web</u> pages</strong> and web
+  applications.browsers receive HTML documents from a
+  web server or from local storage and
+  render them into multimedia web pages.
+  HTML decribes the structure of a Web
+  page semantically and origiinally
+  included cues for the appearance of
+  document.
+  <img src="coding.jpg" width="100%">
+  </p><p style="margin-top:45px;"> HTML elements are the building blocks of
+  HTML pages. With HTML constructs, images
+  and other objects, such as interactive
+  forms, may be embedded into the rendered
+  page. It provides a means to create
+  structured documents by denoting
+  structural semantics for text such as
+  headings, paragraphs, lists, links,
+  quotes and other items, HTML elements
+  are delineated by tags, written using
+  angle brackets.
+  </p>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------
+
+10) <title> 웹사이트 제목 </title> => 웹사이트의 제목을 명시적으로 나타내줌.
+웹사이트의 이름이 파일명이 아닌 title에 의해 정할 수 있게 해줌, 검색엔진에서 이 title을 이용
+
+11) 컴퓨터는 모든 정보를 0 or 1 을 최종적으로 정함 => UTF-8이란 방식으로 저장된 것,
+ '웹브라우저에게 이 웹사이트를 열 때는 UTF-8의 방식으로 열려' 이라고 얘기하는 것 => 
+<meta charset="utf-8"> *char(문자) set(규칙)
+
+12) 본문의 정보를 나타내는 태그, <haed> 본문의 정보 </haed>
+13) 본문을 나타내는 태그, <body> 본문 </body>
+14) <head>, <body>의 고위직 태그를 감싸는 태그 <html> ~ </html>
+15) 이 <html> 태그 위에 관용적으로 '이 문서는 html이다.' 라는 뜻에서 =>
+<!doctype html> 
+
+
+<!doctype html> 
+<html>
+-------본문의 정보(<head>로 표현)를 나타내는 것-----------
+<head>
+<title> WEB1 - html </title>
+<meta charset="utf-8">                  
+</haed>
+-----------본문(<body>로 표현) ---------------------------------
+<body>
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>                          <= 본문
+  <li>JavaScript</li>
+</ol>
+~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+</body>
+-----------------------------------------------------------------------
+</html>
