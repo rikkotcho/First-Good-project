@@ -1,0 +1,151 @@
+-----1.html----
+
+<!doctype html>
+<html>
+<head>
+  <title> WEB1 - HTML </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2> HTML이란 무엇인가? </h2>
+  <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+    target="_blank" title="html5 specification">Hypertext
+  Markup Language (HTML)</a> is the standard markup
+  language for <strong> creating <u>web</u> pages</strong> and web
+  applications.browsers receive HTML documents from a
+  web server or from local storage and
+  render them into multimedia web pages.
+  HTML decribes the structure of a Web
+  page semantically and origiinally
+  included cues for the appearance of
+  document.
+  <img src="coding.jpg" width="100%">
+  </p><p style="margin-top:45px;"> HTML elements are the building blocks of
+  HTML pages. With HTML constructs, images
+  and other objects, such as interactive
+  forms, may be embedded into the rendered
+  page. It provides a means to create
+  structured documents by denoting
+  structural semantics for text such as
+  headings, paragraphs, lists, links,
+  quotes and other items, HTML elements
+  are delineated by tags, written using
+  angle brackets.
+  </p>
+</body>
+</html>
+
+---2.html----
+
+<!doctype html>
+<html>
+<head>
+  <title> WEB1 - CSS </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2> CSS </h2>
+  <p>
+    웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다. 문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를 줄어들게 하였다.
+    기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다. 간단히 스타일 시트라고도 한다.
+
+    HTML을 이용해서 웹 페이지를 제작할 경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야 하지만, 웹 페이지의 스타일(작성형식)을 미리 저장해 두면 웹 페이지의 한 가지 요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로, 문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다.
+
+    따라서 웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, 글자의 크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다.
+    [네이버 지식백과] CSS [cascading style sheets] (두산백과 두피디아, 두산백과)
+  </p>
+</body>
+</html>
+
+-----3.html--------
+<!doctype html>
+<html>
+<head>
+  <title> WEB1 - JavaScript </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2> JavaScript </h2>
+  <p>Ecma International의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다. 특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다. HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.[1] 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.
+  </p>
+</body>
+</html>
+
+----index.html------
+<!doctype html>
+<html>
+<head>
+  <title> WEB1 - Welcome </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2> WEB </h2>
+  <p>보통 WWW(World Wide Web)이라고 불린다. 제공하는 정보 검색 서비스로 텍스트만 제공했던 기존의 정보 서비스와는 달리 그림, 동화상, 소리 등도 모두 지원하고 있다. 또 하이퍼텍스트 개념을 도입하여 쉽게 원하는 정보와 관련된 정보를 찾아볼 수 있는 특징을 갖고 있다. 그래픽 환경으로 손쉬운 사용법이 현재 인터넷이 급부상하게 된 하나의 원인이다.
+[네이버 지식백과] 웹 [web] (한글글꼴용어사전, 2000. 12. 25., 세종대왕기념사업회).
+  </p>
+</body>
+</html>
+
+-------------------------commantary-----------------
+
+검색엔진은 이 태그 덕분에 최고의 검색결과를 만들 수 있게 됨.
+도시의 길과, 혈관같은 태그 
+
+16) <a href="링크"> </a> 문자에 링크
+17) target ="_blank" => 링크를 새탭으로 열음
+18) title = "html15 specification" => 링크에 마우스를 올리면 ""의 
+툴팁이 보임.
+
+ anchor(닻)의 <a>, Hyper text = 링크(h), reference(참고)의 3글자 ref
+
+<a href="링크" target ="_blank" title="툴팁"> 링크를 걸 문자 </a>
+
+우리가 만든 웹사이트들을 엮어서 하나의 웹사이트로
+
+WEB -> index.html
+1. HTML -> 1.html
+2. CSS   -> 2.html
+3. JavaScript -> 3. html 링크를 걸어 해당 링크가 나오도록 함.
+
+
+<h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+
+2.html 에서 <title> WEB1 - CSS 로 변경
+<h2> CSS </h2> 로 변경
+<p> 본문 내용을 css에 대한 내용으로 변경 </p>
+
+마찬가지로 3.html과  index.html에서도
+각각 JavaScript와 WEB 과 같은 형태로 위와 같이 변경해준다.
+
