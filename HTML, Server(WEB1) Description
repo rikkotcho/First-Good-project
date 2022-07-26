@@ -1,0 +1,244 @@
+HTML
+
+1. TAG(태그) 모음 (닫힐 때는 /로 구분)
+
+1) <strong> creating web pages</strong> => 가운데 문장이 진해짐.
+2) <u>web</u> => 가운데 문장에 밑줄(underline, 'u')
+3) <h1> HTML </h1> => 숫자가 올라갈수록 글씨가 작아짐, 일반적인 텍스트보다 글씨가
+두꺼워짐, 줄바꿈이 됨, HTML heading(제목을 나타내는 태그)
+
+<h1>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h1>
+<h2>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h2>
+<h3>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h3>
+<h4>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h4>
+<h5>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h5>
+<h6>서울 아침 8도…추위 주춤, 미세먼지는 나쁨</h6>
+
+4) 150개가 넘는 태그를 다 외워야 될까? -> X 검색하면서, but 기본적인 태그는 알아야.
+https://www.advancedwebranking.com/seo/html-study/  - 전세계 웹사이트에서 쓰이는 태그 갯수에 대한 통계
+https://ofcourse.kr/html-course/head-%ED%83%9C%EA%B7%B8 - html, css, js 기본적 태그 정의, 소개 
+
+5) <br> =>줄바꿈(이건 태그를 닫지 않음)
+   <br><br><br> => 3번 줄바꿈 
+6) <p>문장</p> =>  단락을 구분해줌. (<br>보단 단락의 정보를 나타내는 <p></p>를 쓰는
+것이 더 좋다>
+
+웹의 핵심적인 철학 - 접근성
+웹은 모든 운영체제에서 동작, 웹 페이지의 소스코드는 누구나 볼 수 있음,
+웹은 저작권이 없는 순수한 공공재, accessibility(개방성, 접근성)
+
+태그론 부족해! -속성편-
+
+7) 웹에 사진 넣는법(태그 <img>, 속성(Attribute))
+
+<img> 태그만 넣는다면 태그의 정보가 부족 -> 아무 이미지x
+따라서 어떤 이미지인지 알려주기로 약속된 속성, source => 줄여서 src
+<img src="coding.jpg" width="100%"> (<img src ="이미지 주소" width="이미지 크기">)
+
+*Unsplash(저작권의 구애x 퀄리티 높은 사진을 구할 수 있는 웹사이트)
+
+img는 태그, src="coding.jpg" width="100%" 속성이다.
+속성은 위치를 바꿔도 상관x <img width="100%" src ="coding.jpg"> 도 가능함.
+
+태그로는 나타내기 부족한 정보를 속성을 통해 더 많은 의미를 부가할 수 있게 됨.
+
+*Tip : ctrl + 마우스 왼쪽 클릭 => 여러 줄 한 번에 입력가능, 
+드래그 + TAB => 안으로 한꺼번에 들여쓰기
+
+
+                                    <parent>
+●부모-자식 관계의 태그        <child></child>
+                                    </parent>
+
+부모-자식 태그를 이용하여 "목차" 만들기
+
+
+8) 'list'의 준말 li,
+ <li> 항목 </li>  => 항목 태그
+
+<li>와 같은 항목들을 구분해주는 부모태그 <ul> (<li>목록</li>) </ul> <ul> (<li>목록</li>) </ul> 
+(이때 Tip에서 배운 드래고 + TAB을 이용해 안으로 들여쓰기)
+
+부모 태그(<ul>)를 이용해 <li>와 같은 항목들이 어디서부터 어디까지가 서로 연관된 
+항목인지를 경계 짓기 위한, 그룹핑을 하기 위한 부모태그가 필요함.
+
+=>  ***<li> 태그는 반드시 부모 태그를 갖고 있다, 부모 태그인 <ul>태그는
+반드시 자식 태그를 갖고 있다.
+
+9) <ol> 태그
+<ol>태그는 따로 숫자를 적지 않아도 알아서 순서를 정해서 숫자를 적어줌.
+
+<ul>                                                        
+  <li>1. HTML</li>
+  <li>2. CSS</li>
+  <li>3. JavaScript</li>
+</ul>
+         
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>                    
+  <li>JavaScript</li>
+</ol>
+
+10) <title> 웹사이트 제목 </title> => 웹사이트의 제목을 명시적으로 나타내줌.
+웹사이트의 이름이 파일명이 아닌 title에 의해 정할 수 있게 해줌, 검색엔진에서 이 title을 이용
+
+11) 컴퓨터는 모든 정보를 0 or 1 을 최종적으로 정함 => UTF-8이란 방식으로 저장된 것,
+ '웹브라우저에게 이 웹사이트를 열 때는 UTF-8의 방식으로 열려' 이라고 얘기하는 것 => 
+<meta charset="utf-8"> *char(문자) set(규칙)
+
+12) 본문의 정보를 나타내는 태그, <haed> 본문의 정보 </haed>
+13) 본문을 나타내는 태그, <body> 본문 </body>
+14) <head>, <body>의 고위직 태그를 감싸는 태그 <html> ~ </html>
+15) 이 <html> 태그 위에 관용적으로 '이 문서는 html이다.' 라는 뜻에서 =>
+<!doctype html> 
+
+
+<!doctype html> 
+<html>
+-------본문의 정보(<head>로 표현)를 나타내는 것-----------
+<head>
+<title> WEB1 - html </title>
+<meta charset="utf-8">                  
+</haed>
+-----------본문(<body>로 표현) ---------------------------------
+<body>
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>                          <= 본문
+  <li>JavaScript</li>
+</ol>
+~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+</body>
+-----------------------------------------------------------------------
+</html>
+
+
+
+검색엔진은 이 태그 덕분에 최고의 검색결과를 만들 수 있게 됨.
+도시의 길과, 혈관같은 태그 
+
+16) <a href="링크"> </a> 문자에 링크
+17) target ="_blank" => 링크를 새탭으로 열음
+18) title = "html15 specification" => 링크에 마우스를 올리면 ""의 
+툴팁이 보임.
+
+ anchor(닻)의 <a>, Hyper text = 링크(h), reference(참고)의 3글자 ref
+
+<a href="링크" target ="_blank" title="툴팁"> 링크를 걸 문자 </a>
+
+우리가 만든 웹사이트들을 엮어서 하나의 웹사이트로
+
+WEB -> index.html
+1. HTML -> 1.html
+2. CSS   -> 2.html
+3. JavaScript -> 3. html 링크를 걸어 해당 링크가 나오도록 함.
+
+
+<h1><a href="index.html"> WEB</a> </h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+
+2.html 에서 <title> WEB1 - CSS 로 변경
+<h2> CSS </h2> 로 변경
+<p> 본문 내용을 css에 대한 내용으로 변경 </p>
+
+마찬가지로 3.html과  index.html에서도
+각각 JavaScript와 WEB 과 같은 형태로 위와 같이 변경해준다.
+
+
+----------------------Server------------------------------------------------
+
+웹서버 운영하기(with Web Server for Chrome)
+https://youtu.be/krG7jVMUe_0 (수업영상 참고)
+
+요청이 들어왔을 때 그 요청을 어느 디렉토리에서 찾을 것인가
+Web Server에게 알려줘야 됨 => CHOOSE FOLDER
+
+'index.html 파일을 직접 여는 것' 과
+'Web Server를 통해 여는 것'의 차이는?
+
+-my computer-
+1. web폴더(index.html 포함돼있음)
+2. Web Server(설치했음, Web Server for Chrome)
+3. Web browser(원래 있는 것)
+
+1) 웹브라우저를 통해 파일로 바로 열었을 때
+Web browser에서 file(file:///Desktop/web/index.html)을 열면
+=> Web browser가 index.html을 직접 연것.
+
+2) 웹브라우저에서 웹서버를 통해 주소를 입력하여 접속했을 때
+http로 시작하는 주소(http://127.0.0.1:8887/index.html) 입력하고
+접속한다는 것은 같은 컴퓨터에 설치되어 있는 Web Server에 
+접속해서 Web Server가 index.html을 읽어 Web browser에 돌려
+주는 것
+
+http = Hyper Text(웹페이지) Transfer(전송하다) Protocol(통신 규칙)
+127.0.0.1 = IPA(internet Protocol Address), 컴퓨터와 컴퓨터가
+서로 통신을 할 때 사용되는 주소체계, 약 43억개 존재
+127.0.0.1 => 같은 컴퓨터, 나 자신을 의미하는 주소
+
+==> 웹브라우저는 같은 컴퓨터에 설치되어 있는 웹서버에 접속하고
+있는 것을 의미함.
+
+8887 = port
+
+----------------------------------------------------
+Apache(bitnami)를 이용한 웹서버 설치 및 서버 구동
+
+C:/bitnami에서 window manager => Go to Application => bitnami 홈페이지
+bitnami 홈페이지 주소창에서 http://127.0.0.1/index.html 입력(홈페이지는 그대로)
+
+1. index.html 파일이 어디에? => C:/bitnami > apache2 > htdocs > index(.html)
+2. index 파일을 메모장으로 열어서 <body> 아래에 web1을 적고 저장
+3. 이전에 열어두었던 bitnami 홈페이지를 리로드하면 수정됐음을 알 수 있음.
+
+결론 =>  bitnami 홈페이지(index.html)에 표시되는 이 웹페이지는 바로
+htdocs 디렉토리 안에 저장되어 있는 index.html 파일인 것을 의미.
+
+우리는 한 대의 컴퓨터 -> bitnami가 만든 htdocs 디렉토리 안에 index.html이 존재
+한 대의 컴퓨터 안에 Web Browser와 Web Server가 모두 설치되어 있음.
+
+웹브라우저로 웹서버를 통해서 htdocs 디렉토리 안에 있는 index.html파일을
+가져오려고 주소를 찾으면 http://127.0.0.1/index.html 
+
+127.0.0.1 = IPA(internet Protocol Address), 컴퓨터와 컴퓨터가 
+127.0.0.1 => 같은 컴퓨터, 나 자신을 의미하는 주소 // 웹브라우저가 설치되어 있는 컴퓨터를 가리키는 주소 
+
+127.0.0.1/에서 "index.html 입력" => 127.0.0.1/index.html, 
+1. index.html라는 경로를 적어주면 웹브라우저가 자신의 컴퓨터에 설치되어있는
+웹서버에 접속해서 저 index.html 파일을 원한다는 것을 의미
+2. 웹서버에선 htdocs 안에 index.html 파일을 읽어 웹브라우저에게 전송
+(WEB1 - 19.1.2 웹서버와 http (윈도우)(2022년 신규 강의로 대체 되었습니다, 4:55)
+
+*bitnami 홈페이지를 내가 만든 html로 변경하는 법
+htdocs 디렉토리 안에 있는 파일을 삭제하고 내가 만든 html을 복사+붙여넣기
+
+*복습
+1) 웹브라우저를 통해 파일로 바로 열었을 때
+Web browser에서 file(file:///Desktop/web/index.html)을 열면
+=> Web browser가 index.html을 직접 연 것.
+
+2) 웹브라우저에서 웹서버를 통해 주소를 입력하여 접속했을 때
+http로 시작하는 주소(http://127.0.0.1:8887/index.html) 입력하고
+접속한다는 것은 같은 컴퓨터에 설치되어 있는 Web Server에 
+접속해서 Web Server가 index.html을 읽어 Web browser에 돌려
+주는 것.
+
+----------------------------------------------------------------------------------------
+웹서버와 웹브라우저의 통신(두 대의 컴퓨터가 통신)
+
+1. 파일(index.html)이 저장되어 있는 웹서버의 IP주소(IPA)가 필요, 알아내야 함.
+2. 같은 네트워크에 연결된 두 대의 컴퓨터, 그리고 알아낸 웹서버 ip를 
+다른 컴퓨터(핸드폰 주소창에 입력)
+3. 웹서버에 저장된 index.html이 핸드폰 웹브라우저에 출력
+
+=> 같은 네트워크가 아닌 다른 사람, 혹은 전세계 사람들이 내 서버에 
+접속하여 파일을 출력하는 것은 web2에서 배움.
+
+
+
+^-'
