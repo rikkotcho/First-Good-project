@@ -1,0 +1,90 @@
+----------------------Server------------------------------------------------
+
+웹서버 운영하기(with Web Server for Chrome)
+https://youtu.be/krG7jVMUe_0 (수업영상 참고)
+
+요청이 들어왔을 때 그 요청을 어느 디렉토리에서 찾을 것인가
+Web Server에게 알려줘야 됨 => CHOOSE FOLDER
+
+'index.html 파일을 직접 여는 것' 과
+'Web Server를 통해 여는 것'의 차이는?
+
+-my computer-
+1. web폴더(index.html 포함돼있음)
+2. Web Server(설치했음, Web Server for Chrome)
+3. Web browser(원래 있는 것)
+
+1) 웹브라우저를 통해 파일로 바로 열었을 때
+Web browser에서 file(file:///Desktop/web/index.html)을 열면
+=> Web browser가 index.html을 직접 연것.
+
+2) 웹브라우저에서 웹서버를 통해 주소를 입력하여 접속했을 때
+http로 시작하는 주소(http://127.0.0.1:8887/index.html) 입력하고
+접속한다는 것은 같은 컴퓨터에 설치되어 있는 Web Server에 
+접속해서 Web Server가 index.html을 읽어 Web browser에 돌려
+주는 것
+
+http = Hyper Text(웹페이지) Transfer(전송하다) Protocol(통신 규칙)
+127.0.0.1 = IPA(internet Protocol Address), 컴퓨터와 컴퓨터가
+서로 통신을 할 때 사용되는 주소체계, 약 43억개 존재
+127.0.0.1 => 같은 컴퓨터, 나 자신을 의미하는 주소
+
+==> 웹브라우저는 같은 컴퓨터에 설치되어 있는 웹서버에 접속하고
+있는 것을 의미함.
+
+8887 = port
+
+----------------------------------------------------
+Apache(bitnami)를 이용한 웹서버 설치 및 서버 구동
+
+C:/bitnami에서 window manager => Go to Application => bitnami 홈페이지
+bitnami 홈페이지 주소창에서 http://127.0.0.1/index.html 입력(홈페이지는 그대로)
+
+1. index.html 파일이 어디에? => C:/bitnami > apache2 > htdocs > index(.html)
+2. index 파일을 메모장으로 열어서 <body> 아래에 web1을 적고 저장
+3. 이전에 열어두었던 bitnami 홈페이지를 리로드하면 수정됐음을 알 수 있음.
+
+결론 =>  bitnami 홈페이지(index.html)에 표시되는 이 웹페이지는 바로
+htdocs 디렉토리 안에 저장되어 있는 index.html 파일인 것을 의미.
+
+우리는 한 대의 컴퓨터 -> bitnami가 만든 htdocs 디렉토리 안에 index.html이 존재
+한 대의 컴퓨터 안에 Web Browser와 Web Server가 모두 설치되어 있음.
+
+웹브라우저로 웹서버를 통해서 htdocs 디렉토리 안에 있는 index.html파일을
+가져오려고 주소를 찾으면 http://127.0.0.1/index.html 
+
+127.0.0.1 = IPA(internet Protocol Address), 컴퓨터와 컴퓨터가 
+127.0.0.1 => 같은 컴퓨터, 나 자신을 의미하는 주소 // 웹브라우저가 설치되어 있는 컴퓨터를 가리키는 주소 
+
+127.0.0.1/에서 "index.html 입력" => 127.0.0.1/index.html, 
+1. index.html라는 경로를 적어주면 웹브라우저가 자신의 컴퓨터에 설치되어있는
+웹서버에 접속해서 저 index.html 파일을 원한다는 것을 의미
+2. 웹서버에선 htdocs 안에 index.html 파일을 읽어 웹브라우저에게 전송
+(WEB1 - 19.1.2 웹서버와 http (윈도우)(2022년 신규 강의로 대체 되었습니다, 4:55)
+
+*bitnami 홈페이지를 내가 만든 html로 변경하는 법
+htdocs 디렉토리 안에 있는 파일을 삭제하고 내가 만든 html을 복사+붙여넣기
+
+*복습
+1) 웹브라우저를 통해 파일로 바로 열었을 때
+Web browser에서 file(file:///Desktop/web/index.html)을 열면
+=> Web browser가 index.html을 직접 연 것.
+
+2) 웹브라우저에서 웹서버를 통해 주소를 입력하여 접속했을 때
+http로 시작하는 주소(http://127.0.0.1:8887/index.html) 입력하고
+접속한다는 것은 같은 컴퓨터에 설치되어 있는 Web Server에 
+접속해서 Web Server가 index.html을 읽어 Web browser에 돌려
+주는 것.
+
+----------------------------------------------------------------------------------------
+웹서버와 웹브라우저의 통신(두 대의 컴퓨터가 통신)
+
+1. 파일(index.html)이 저장되어 있는 웹서버의 IP주소(IPA)가 필요, 알아내야 함.
+2. 같은 네트워크에 연결된 두 대의 컴퓨터, 그리고 알아낸 웹서버 ip를 
+다른 컴퓨터(핸드폰 주소창에 입력)
+3. 웹서버에 저장된 index.html이 핸드폰 웹브라우저에 출력
+
+=> 같은 네트워크가 아닌 다른 사람, 혹은 전세계 사람들이 내 서버에 
+접속하여 파일을 출력하는 것은 web2에서 배움.
+
+^-'
